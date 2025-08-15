@@ -39,7 +39,7 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 # ─── MONGO SETUP ───────────────────────────────────────────────────────────────
-MONGO_URI = "mongodb+srv://root:Om001122@cluster0.hhcuv7x.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
+MONGO_URI = "mongodb+srv://<your-credentials>@cluster0.hhcuv7x.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
 client    = MongoClient(MONGO_URI)
 db        = client["faceauth_db"]
 col       = db["embeddings"]
@@ -204,3 +204,4 @@ with tabs[1]:
             st.info("Click ▶️ Start Authentication to begin face scan.")
 
     st.markdown('</div>', unsafe_allow_html=True)
+
